@@ -11,10 +11,10 @@
 }
 
 body {
-  background-color: var(--background-color-1);
   color: var(--text-color-1);
 }
 
+/* a */
 .bg-my-color {
   background-color: var(--background-color-bg);
   color: var(--color-1);
