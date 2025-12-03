@@ -1,4 +1,38 @@
+:root {
+  --background-color-bg: #f8f8fa;
+  --color-1: #0d1a26;
+  --primary-color: #4da6ff;
+
+  --text-color-main: #212529;
+  --text-color-secondary: #6c757d;
+
+  --successful: #45b85a;
+  --danger: #d9534f;
+}
+
 body {
-  background-color: #1c1c1c;
-  color: #fff;
+  background-color: var(--background-color-1);
+  color: var(--text-color-1);
+}
+
+.bg-my-color {
+  background-color: var(--background-color-bg);
+  color: var(--color-1);
+}
+
+.my-nav {
+  background-color: var(--color-1);
+  color: var(--text-color-1);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color-1);
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #388ae0;
+  border-color: #388ae0;
 }

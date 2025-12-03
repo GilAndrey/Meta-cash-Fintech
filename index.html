@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Meta Cash - Fintech</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,21 +12,117 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <div class="container my-4"></div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top my-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="#saldo">
+          <i class="fas fa-wallet me-2" style="color: var(--primary-color)"></i>
+          Meta Cash
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#saldo"
+                style="color: var(--primary-color)"
+                >Saldo Atual</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#extrato">Extrato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pagamento">Pagamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#metas">Metas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="saldo" class="py-5">
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <h1 class="display-3 fw-bold" style="color: var(--color-1)">
+              Soluções modernas para o
+              <span style="color: var(--primary-color)"
+                >seu controle financeiro.</span
+              >
+            </h1>
+
+            <p
+              class="lead mt-3 mb-4"
+              style="color: var(--text-color-secondary)"
+            >
+              Meta Cash: Gerencie seu dinheiro, alcance suas metas e simplifique
+              pagamentos. Sua vida financeira no comando.
+            </p>
+
+            <a
+              href="#pagamento"
+              class="btn btn-lg btn-primary-custom shadow-lg"
+            >
+              Abrir Conta Agora <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-md-12 text-center">
+            <img
+              src="images/money-work.jpg"
+              class="img-fluid rounded shadow-lg"
+              alt="Equipe de desenvolvedores e engrenagens"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="extrato" class="py-5">
+      <div class="container my-5">
+        <h2 class="text-center display-5 fw-bold">Extrato de Transações</h2>
+      </div>
+    </section>
+
+    <section
+      id="pagamento"
+      class="py-5"
+      style="background-color: var(--background-color-bg)"
+    ></section>
+
+    <section id="metas" class="py-5"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
