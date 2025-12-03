@@ -7,14 +7,6 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
@@ -27,6 +19,7 @@
   </head>
 
   <body>
+    <!-- Começo da Header / NAV-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top my-nav">
       <div class="container">
         <a class="navbar-brand fw-bold text-uppercase" href="#saldo">
@@ -50,15 +43,18 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#saldo"
-                style="color: var(--primary-color)"
-                >Saldo Atual</a
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item me-4">
+              <span
+                class="text-white small me-2"
+                style="color: white !important"
+                >Saldo:</span
+              >
+              <span class="fw-bold fs-5" style="color: var(--successful)"
+                >R$ 2.000,00</span
               >
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#extrato">Extrato</a>
             </li>
@@ -72,6 +68,11 @@
         </div>
       </div>
     </nav>
+
+    <!-- Fim do Header / Nav -->
+
+    <!-- Começo da Seção Saldo -->
+
     <section id="saldo" class="py-5">
       <div class="container my-5">
         <div class="row align-items-center">
@@ -103,25 +104,238 @@
             <img
               src="images/money-work.jpg"
               class="img-fluid rounded shadow-lg"
-              alt="Equipe de desenvolvedores e engrenagens"
+              alt="Imagem de apresentação da Meta Cash"
             />
           </div>
         </div>
       </div>
     </section>
-    <section id="extrato" class="py-5">
+
+    <!-- Fim da Seção Saldo -->
+
+    <!-- Começo da Seção Extrato -->
+    <section
+      id="extrato"
+      class="py-5"
+      style="background-color: var(--background-color-bg)"
+    >
       <div class="container my-5">
-        <h2 class="text-center display-5 fw-bold">Extrato de Transações</h2>
+        <h2
+          class="text-center mb-5 display-5 fw-bold"
+          style="color: var(--color-1)"
+        >
+          <i
+            class="fas fa-list-alt me-3"
+            style="color: var(--primary-color)"
+          ></i>
+          Histórico de Transações
+        </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-md-11">
+            <h5 class="fw-bold mb-3" style="color: var(--color-1)">
+              Últimas Movimentações
+            </h5>
+            <ul class="list-group shadow-sm">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+                style="
+                  background-color: #fff;
+                  color: var(--text-color-main);
+                  border-left: 5px solid var(--danger);
+                "
+              >
+                <div>
+                  <p class="mb-0 fw-bold">Restaurante Bom Prato</p>
+                  <span class="small" style="color: var(--text-color-secondary)"
+                    >12/05/2025 | Alimentação</span
+                  >
+                </div>
+                <span class="fw-bold" style="color: var(--danger)"
+                  >- R$ 350,00</span
+                >
+              </li>
+
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+                style="
+                  background-color: #fff;
+                  color: var(--text-color-main);
+                  border-left: 5px solid var(--successful);
+                "
+              >
+                <div>
+                  <p class="mb-0 fw-bold">Serviço Free Lancer</p>
+                  <span class="small" style="color: var(--text-color-secondary)"
+                    >15/05/2025 | Receita</span
+                  >
+                </div>
+                <span class="fw-bold" style="color: var(--successful)"
+                  >+ R$ 600,00</span
+                >
+              </li>
+
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+                style="
+                  background-color: #fff;
+                  color: var(--text-color-main);
+                  border-left: 5px solid var(--danger);
+                "
+              >
+                <div>
+                  <p class="mb-0 fw-bold">Cine Filmes - Movies</p>
+                  <span class="small" style="color: var(--text-color-secondary)"
+                    >12/05/2025 | Lazer</span
+                  >
+                </div>
+                <span class="fw-bold" style="color: var(--danger)"
+                  >- R$ 30,00</span
+                >
+              </li>
+
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+                style="
+                  background-color: #fff;
+                  color: var(--text-color-main);
+                  border-left: 5px solid var(--successful);
+                "
+              >
+                <div>
+                  <p class="mb-0 fw-bold">Transferência de João S.</p>
+                  <span class="small" style="color: var(--text-color-secondary)"
+                    >05/05/2025 | Receita</span
+                  >
+                </div>
+                <span class="fw-bold" style="color: var(--successful)"
+                  >+ R$ 150,00</span
+                >
+              </li>
+
+              <li class="list-group-item text-center">
+                <a href="#" class="btn btn-sm btn-outline-secondary mt-2">
+                  Carregar Extrato Completo <i class="fas fa-search ms-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Fim da Seção Extrato -->
+
+    <!-- Começo da Seção Pagamento -->
     <section
       id="pagamento"
       class="py-5"
       style="background-color: var(--background-color-bg)"
-    ></section>
+    >
+      <div class="container my-5">
+        <h2
+          class="text-center mb-5 display-5 fw-bold"
+          style="color: var(--color-1)"
+        >
+          <i
+            class="fas fa-money-check-alt me-3"
+            style="color: var(--primary-color)"
+          ></i>
+          Novo Pagamento
+        </h2>
 
-    <section id="metas" class="py-5"></section>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-9">
+            <div class="card shadow-lg border-0 p-4">
+              <div class="card-body">
+                <h5
+                  class="card-title fw-bold mb-4"
+                  style="color: var(--color-1)"
+                >
+                  Faça o seu pagamento
+                </h5>
+
+                <form>
+                  <div class="mb-4">
+                    <label
+                      for="valorPagar"
+                      class="form-label fw-bold"
+                      style="color: var(--color-1)"
+                      >Valor a pagar (R$)</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg text-center"
+                      id="valorPagar"
+                      placeholder="R$ 0,00"
+                    />
+                  </div>
+
+                  <div class="mb-5">
+                    <label
+                      for="chavePix"
+                      class="form-label fw-bold"
+                      style="color: var(--color-1)"
+                      >Para quem</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="chavePix"
+                      placeholder="Digite chave, CPF ou Email"
+                    />
+                  </div>
+
+                  <div class="d-flex justify-content-around mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary d-flex flex-column align-items-center me-2"
+                    >
+                      <i
+                        class="fas fa-qrcode fa-2x mb-1"
+                        style="color: var(--color-1)"
+                      ></i>
+                      <span class="small">QR Code</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary d-flex flex-column align-items-center me-2"
+                    >
+                      <i
+                        class="fas fa-credit-card fa-2x mb-1"
+                        style="color: var(--color-1)"
+                      ></i>
+                      <span class="small">Cartões</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary d-flex flex-column align-items-center"
+                    >
+                      <i
+                        class="fas fa-user-circle fa-2x mb-1"
+                        style="color: var(--color-1)"
+                      ></i>
+                      <span class="small">Contato</span>
+                    </button>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-lg btn-primary-custom w-100 shadow-sm"
+                  >
+                    Transferir Agora <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fim da Seção Pagamento -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
